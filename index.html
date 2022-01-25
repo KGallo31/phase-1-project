@@ -1,19 +1,57 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <script src='index.js' ></script>
-        <link rel="stylesheet" type="text/css" href="index.css"/>
-        <title>HELLO WORLD</title>
-    </head>
 
-    <body>
-        <h1>
-            <div>
-                <img id = 'mainPic' src= "" alt = 'idk' />
-            </div>
-            <button type="button" class = 'btn'>Get Recipe</button>
+<head>
+  <meta charset="utf-8" />
+  <title>Recipe Book</title>
+  <link rel="stylesheet" type="text/css" href="index.css" />
+  <script defer type="text/javascript" src="index.js"></script>
+</head>
 
-        </h1>
-    </body>
+<body>
+  <header>
+    <h3>Recipe Book
+    </h3>
+  </header>
 
+  <!-- Ramen Menu -->
+  <div id="ramen-menu">
+    <!-- Ramen Images Here -->
+  </div>
+
+  <!-- Ramen Details -->
+  <button>Get New Recipe</button>
+  <div id="ramen-detail">
+    <img class="detail-image" src=" " alt="Insert Name Here" />
+    <h2 class="name">Insert Name Here</h2>
+  </div>
+
+  <h3>Recipe:
+      <ul>
+          
+      </ul>
+  </h3>
+  <h3>Description</h3>
+  <p>
+  </p>
+  <p id='comment-display'>
+    Insert comment here
+  </p>
+
+  <!-- New Ramen Form -->
+  <form id="new-ramen">
+    <h4>Add New Recipe</h4>
+    <label for="name"> Receipe Name: </label>
+    <input type="text" name="name" id="new-name" />
+    <label for="restaurant">Ingredients: </label>
+    <input type="text" name="ingredients" id="new-ingredients" />
+    <label for="image">Description: </label>
+    <input type="text" name="desc" id="new-desc" />
+    <label for="image">Image: </label>
+    <input type="text" name="desc" id="new-img" />
+    <input type = 'submit' value='Create'/>
+  </form>
+
+</body>
 
 </html>
