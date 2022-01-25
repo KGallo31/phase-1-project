@@ -23,7 +23,7 @@ function setIngredents(meal){
         let mes = `strMeasure${i}`
         let currentMes = meal.meals[0][mes]
         list.textContent = currentMes + ' ' + currentMeal
-        if(currentMeal === '')
+        if(currentMeal === '' || currentMeal === null)
         {
             break
         }
