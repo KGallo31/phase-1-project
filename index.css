@@ -1,0 +1,9 @@
+.btn{
+    background-color: aqua;
+}
+#mainPic{
+    width: 50%;
+    height: 200px;
+    background-size: cover;
+    padding: 25px;
+}
