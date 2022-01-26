@@ -1,57 +1,46 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Recipe Book</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script defer type="text/javascript" src="index.js"></script>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <title>Recipe Book</title>
-  <link rel="stylesheet" type="text/css" href="index.css" />
-  <script defer type="text/javascript" src="index.js"></script>
-</head>
+  <body>
+    <header>
+      <h3>Recipe Book</h3>
+      <button>Get New Recipe</button>
+    </header>
 
-<body>
-  <header>
-    <h3>Recipe Book
-    </h3>
-  </header>
+    <!-- Recipe Details -->
+    <div id="recipe-detail">
+      <img class="detail-image" src=" " alt="Insert Name Here" />
+      <div id="recipe-text">
+        <h2 class="name">Insert Name Here</h2>
+        <h3>
+          Recipe:
+          <ul class="recipe-list"></ul>
+        </h3>
+      </div>
+    </div>
 
-  <!-- Ramen Menu -->
-  <div id="ramen-menu">
-    <!-- Ramen Images Here -->
-  </div>
+    <h3>Description</h3>
 
-  <!-- Ramen Details -->
-  <button>Get New Recipe</button>
-  <div id="ramen-detail">
-    <img class="detail-image" src=" " alt="Insert Name Here" />
-    <h2 class="name">Insert Name Here</h2>
-  </div>
+    <p id="description">Insert comment here</p>
 
-  <h3>Recipe:
-      <ul>
-          
-      </ul>
-  </h3>
-  <h3>Description</h3>
-  <p>
-  </p>
-  <p id='comment-display'>
-    Insert comment here
-  </p>
-
-  <!-- New Ramen Form -->
-  <form id="new-ramen">
-    <h4>Add New Recipe</h4>
-    <label for="name"> Receipe Name: </label>
-    <input type="text" name="name" id="new-name" />
-    <label for="restaurant">Ingredients: </label>
-    <input type="text" name="ingredients" id="new-ingredients" />
-    <label for="image">Description: </label>
-    <input type="text" name="desc" id="new-desc" />
-    <label for="image">Image: </label>
-    <input type="text" name="desc" id="new-img" />
-    <input type = 'submit' value='Create'/>
-  </form>
-
-</body>
-
+    <!-- New recipe Form -->
+    <form id="new-recipe">
+      <h4>Add New Recipe</h4>
+      <label for="name"> Receipe Name: </label>
+      <input type="text" name="name" id="new-name" />
+      <label for="ingredients">Ingredients: </label>
+      <input type="text" name="ingredients" id="new-ingredients" />
+      <label for="image">Description: </label>
+      <input type="text" name="desc" id="new-desc" />
+      <label for="image">Image: </label>
+      <input type="text" name="desc" id="new-img" />
+      <input type="submit" value="Create" />
+    </form>
+  </body>
 </html>
